@@ -3,7 +3,7 @@
 from typing import List, Union
 
 """
-Sum type float with an type-annotation sum_mixed_list 
+Sum type float with an type-annotation sum_mixed_list
 wich take a list mxd_lst
 """
 
