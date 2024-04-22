@@ -6,4 +6,7 @@
 def sum_list(input_list: list[float]) -> float:
     "Take type sum_list and returns the Sum type float"
 
-    return sum(input_list)
+    total = 0.0
+    for num in input_list:
+        total += num
+    return total
