@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 
-"Sum two String numbers with an type-annotation"
+"Take two String numbers with an type-annotation concat"
 
 
 def concat(str1: str, str2: str) -> str:
