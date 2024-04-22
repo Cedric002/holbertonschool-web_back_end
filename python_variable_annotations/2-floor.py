@@ -1,9 +1,9 @@
 #!/usr/bin/env python3
 
-"Take a Float n with an type-annotation floor"
+"Take a float n with an type-annotation floor"
 
 
 def floor(n: float) -> int:
-    "Take a Float n and returns the floor of the Float"
+    "Take a float n and returns the floor of the float"
 
     return int(n)

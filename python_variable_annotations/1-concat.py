@@ -1,9 +1,9 @@
 #!/usr/bin/env python3
 
-"Take two String numbers with an type-annotation concat"
+"Take two string numbers with an type-annotation concat"
 
 
 def concat(str1: str, str2: str) -> str:
-    "Take two String numbers and returns the concatenated String"
+    "Take two string numbers and returns the concatenated string"
 
     return str1 + str2

@@ -3,7 +3,7 @@
 from typing import Callable
 
 
-"Take a Float multiplier with an type-annotation make_multiplier"
+"Take a float multiplier with an type-annotation make_multiplier"
 
 
 
