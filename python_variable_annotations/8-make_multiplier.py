@@ -6,7 +6,6 @@ from typing import Callable
 "Take a float multiplier with an type-annotation make_multiplier"
 
 
-
 def make_multiplier(multiplier: float) -> Callable[[float], float]:
     "Take type make_multiplier and returns the multiplier type Float"
 
