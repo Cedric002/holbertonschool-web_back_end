@@ -2,14 +2,13 @@
 
 import asyncio
 import random
-from typing import AsyncGenerator
 
 """
 Write a coroutine `async_generator` that takes no arguments
 """
 
 
-async def async_generator() -> AsyncGenerator[float, None]:
+async def async_generator():
 
     """
     Use a module `random` to loop the coroutine 10 times and
