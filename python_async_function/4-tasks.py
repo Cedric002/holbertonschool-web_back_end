@@ -13,7 +13,7 @@ to measures the total execution time for task_wait_n
 
 
 def task_wait_n(n: int, max_delay: int) -> float:
-    
+
     """
     Measures the total execution time for task_wait_n
     task_wait_random is called.

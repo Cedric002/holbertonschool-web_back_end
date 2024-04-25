@@ -12,7 +12,7 @@ to measures the total execution time for wait_n
 
 
 def measure_time(n: int, max_delay: int) -> float:
-    
+
     """
     Measures the total execution time for wait_n
     Return the average time per iteration type float
