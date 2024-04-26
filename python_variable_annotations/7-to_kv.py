@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
 
+from typing import tuple
 
 """
 Take a string k with an type-annotation to_kv and a int or float v wich
