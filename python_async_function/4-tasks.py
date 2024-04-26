@@ -1,8 +1,10 @@
 #!/usr/bin/env python3
 
 import asyncio
-from time import time
-task_wait_n = __import__('2-measure_runtime').wait_n
+from typing import List
+wait_random = __import__('0-basic_async_syntax').wait_random
+task_wait_random = __import__("3-tasks").task_wait_random
+
 
 """
 Take the code from 'wait_n' and alter for 'task_wait_n'
@@ -12,7 +14,7 @@ to measures the total execution time for task_wait_n
 """
 
 
-def task_wait_n(n: int, max_delay: int) -> float:
+async def task_wait_n(n: int, max_delay: int) -> List[float]:
 
     """
     Measures the total execution time for task_wait_n
@@ -20,8 +22,8 @@ def task_wait_n(n: int, max_delay: int) -> float:
     Return the average time per iteration type float
     """
 
-    start_time = time()
-    asyncio.run(task_wait_n(n, max_delay))
-    end_time = time()
-    total_time = end_time - start_time
-    return total_time / n
+    tasks = [task_wait_random(max_delay) for _ in range(n)]
+
+    delays = await asyncio.gather(*tasks)
+
+    return sorted(delays)
