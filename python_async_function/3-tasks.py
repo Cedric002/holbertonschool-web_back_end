@@ -9,11 +9,13 @@ Not use an async function but a regular function syntax
 """
 
 
-def task_wait_random(max_delay):
+def task_wait_random(max_delay: int) -> asyncio.Task:
 
     """
     Define task_wait_random that takes an integer max_delay
     Returns a asyncio.Task
     """
 
-    return asyncio.create_task(wait_random(max_delay))
+    coroutine = wait_random(max_delay)
+    task = asyncio.create_task(coroutine)
+    return task
