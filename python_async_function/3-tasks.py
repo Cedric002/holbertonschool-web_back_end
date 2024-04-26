@@ -17,5 +17,7 @@ def task_wait_random(max_delay: int) -> asyncio.Task:
     """
 
     coroutine = wait_random(max_delay)
+
     task = asyncio.create_task(coroutine)
+
     return task
