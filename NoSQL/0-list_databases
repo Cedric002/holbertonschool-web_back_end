@@ -1,7 +1,3 @@
 // my comment
 
-db.adminCommand(
-   {
-     listDatabases: 1
-   }
-)
+db.adminCommand( { listDatabases: 1 } )
