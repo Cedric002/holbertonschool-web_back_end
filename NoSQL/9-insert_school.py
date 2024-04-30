@@ -6,7 +6,7 @@
 def insert_school(mongo_collection, **kwargs):
     """
     Inserts the new document based on kwargs and returns
-    _id of the new document 
+    _id of the new document
 
     **kwargs is Keyword arguments representing the fields and
     values of the new document
