@@ -7,7 +7,7 @@ def update_topics(mongo_collection, name, topics):
     """
     Changes all topics of a school document in a MongoDB collection
     based on the school name
-    
+
     mongo_collection is The MongoDB collection object
     name is the name of the school to update
     topics is the list of topics approached in the school.
@@ -16,7 +16,7 @@ def update_topics(mongo_collection, name, topics):
         {"name": name},
         {"$set": {"topics": topics}}
     )
-    
+
     if result.modified_count > 0:
         print(f"Successfully updated the topics for school '{name}'.")
     else:
