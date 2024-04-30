@@ -17,7 +17,4 @@ def update_topics(mongo_collection, name, topics):
         {"$set": {"topics": topics}}
     )
 
-    if result.modified_count > 0:
-        print(f"Successfully updated the topics for school '{name}'.")
-    else:
-        print(f"No school document found with the name '{name}'.")
+    return result.modified_count
