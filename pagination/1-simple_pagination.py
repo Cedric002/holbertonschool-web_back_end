@@ -52,15 +52,15 @@ class Server:
 
         """
         Returns a page of the dataset
-        
+
         page is the page number (1-indexed)
         page_size is the number of items per page
-        
+
         Returns a list of rows representing the requested page
         """
 
-        assert isinstance(page, int) and page > 0, "Page must be a positive integer"
-        assert isinstance(page_size, int) and page_size > 0, "Page size must be a positive integer"
+        assert isinstance(page, int) and page > 0
+        assert isinstance(page_size, int) and page_size > 0
 
         dataset = self.dataset()
 
