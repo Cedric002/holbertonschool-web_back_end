@@ -25,4 +25,4 @@ if __name__ == "__main__":
 
     # Get the number of documents with method=GET and path=/status
     count = collection.count_documents({"method": "GET", "path": "/status"})
-    print(f"\tmethod=GET, path=/status: {count}")d
+    print(f"\tmethod=GET, path=/status: {count}")
