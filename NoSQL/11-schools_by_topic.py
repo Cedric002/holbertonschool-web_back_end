@@ -10,8 +10,5 @@ def schools_by_topic(mongo_collection, topic):
     mongo_collection is the MongoDB collection object
     topic is the topic to search for
     """
-    schools = list(mongo_collection.find({"topics": topic}, {"name": 1}))
 
-    school_names = [school["name"] for school in schools]
-
-    return school_names
+    return mongo_collection.find({"topics": topic})
