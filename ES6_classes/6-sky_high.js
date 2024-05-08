@@ -14,8 +14,3 @@ class SkyHighBuilding extends Building {
     return `Evacuate slowly the ${this._floors} floors`;
   }
 }
-
-const building = new SkyHighBuilding(140, 60);
-console.log(building.sqft);
-console.log(building.floors);
-console.log(building.evacuationWarningMessage());
