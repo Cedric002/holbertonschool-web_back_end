@@ -16,7 +16,7 @@ async function handleProfileSignup(firstName, lastName, fileName) {
       { status: photoResult.status, value: photoResult.value },
     ];
   } catch (error) {
-    console.error("Error handling profile signup:", error.message);
+    console.error("Signup system offline");
     return [];
   }
 }
