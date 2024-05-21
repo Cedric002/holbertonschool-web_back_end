@@ -3,11 +3,11 @@ const updateStudentGradeByCity = (students, city, newGrades) => {
     .filter((student) => student.location === city)
     .map((student) => {
       const gradeObj = newGrades.find(
-        (grade) => grade.studentId === student.id
+        (grade) => grade.studentId === student.id,
       );
       return {
         ...student,
-        grade: gradeObj ? gradeObj.grade : "N/A",
+        grade: gradeObj ? gradeObj.grade : 'N/A',
       };
     });
 };
