@@ -7,7 +7,7 @@ const cleanSet = (set, startString) => {
     }
   }
 
-  return cleanedValues.join("-");
+  return cleanedValues.join('-');
 };
 
 export default cleanSet;
